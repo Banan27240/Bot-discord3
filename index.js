@@ -186,7 +186,7 @@ client.on('message', message => {
             color: 0x06DF00,
             description: '**LES AUTO REPONDEUR**\n\n je mange \n qui\n ping \n sava\n wsh\n bonjour   \n\n **LES COMMANDE FUN** \n\n ?youtube\n ?google\n ?wiki\n ?méteo <ville>\n ?info<user> \n ?uni\n ?dog\n ?ping\n ?channel <sur le channel de votre choix>\n ?8ball\n ?flop <votre message>\n ?stat\n ?cat\n ?avatar <user>\n ?bot <info sur le bot>\n\n **LES COMMANDE ADMIN**\n\n ?ban <user>\n ?mute <user>\n ?unmute <user mute>\n ?clear\n ?addrole <non du rôle >\n ?suprole <non du rôle >',           
             footer: {
-              text: "Message par BananoBot."
+              text: "Message par Bender | Bot."
               }
             }}).catch(console.error);   
       
@@ -281,7 +281,7 @@ client.on('message', message => {
             color: 0x06DF00,
             description: 'je suis en compagnie de '+ memberCount +' membres \n je suis présent dans '+ servercount+' serveurs \n',
             footer: {
-              text: "Message par Banozor."
+              text: "Message par Bender| Bot"
               }
             }}).catch(console.error);
         
@@ -446,7 +446,7 @@ if(!message.member.roles.has(modRole.id)) {
           color: 0xff0000,
           description: " :no_entry_sign: Vous n'avez pas la permissions d'utiliser cette commande ! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       } 
@@ -456,7 +456,7 @@ if(!message.member.roles.has(modRole.id)) {
           color: 0xff0000,
           description: " :no_entry_sign: Le rôle **Mod** n'existe pas dans ce serveur veuillez le créer pour Kick! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       } 
@@ -466,7 +466,7 @@ if(message.mentions.users.size === 0) {
           color: 0xff0000,
           description: " :no_entry_sign: Merci de spécifié l'utilisateur que vous voulez Kick. **Format ~> `!kick @mention`** ! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
 }
@@ -477,7 +477,7 @@ if(!kickMember) {
           color: 0xff0000,
           description: " :x:  L\'utilisateur que vous avez entré n'est pas valide ! :x:",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
 }
@@ -493,7 +493,7 @@ title: "Erreur:",
 color: 0xff0000,
 description: " :no_entry_sign: Le salon textuel `admin-logs` n'existait pas, je viens de le créer pour vous :white_check_mark: , Veuillez réessayer :wink:",
 footer: {
-text: "Message par BananoBot."
+text: "Message par Bender | Bot."
 }
 }}).catch(console.error);
 }   
@@ -503,7 +503,7 @@ kickMember.kick().then(member => {
           color: 0xff0000,
           description: `${member.user.username}`+` à bien été kick`,
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
 }).then(message.guild.channels.find('name','admin-logs').sendMessage({
@@ -550,7 +550,7 @@ if(!message.member.roles.has(modRole.id)) {
           color: 0xff0000,
           description: " :no_entry_sign: Vous n'avez pas la permissions d'utiliser cette commande ! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       } 
@@ -560,7 +560,7 @@ if(!message.member.roles.has(modRole.id)) {
           color: 0xff0000,
           description: " :no_entry_sign: Le rôle **Mod** n'existe pas dans ce serveur veuillez le créer pour Kick! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot"
           }
         }}).catch(console.error);
       } 
@@ -570,7 +570,7 @@ if(message.mentions.users.size === 0) {
           color: 0xff0000,
           description: " :no_entry_sign: Merci de spécifié l'utilisateur que vous voulez Kick. **Format ~> `!ban @mention`** ! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot" 
           }
         }}).catch(console.error);
 }
@@ -581,7 +581,7 @@ if(!banMember) {
           color: 0xff0000,
           description: " :x:  L\'utilisateur que vous avez entré n'est pas valide ! :x:",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot" 
           }
         }}).catch(console.error);
 }
@@ -597,7 +597,7 @@ title: "Erreur:",
 color: 0xff0000,
 description: " :no_entry_sign: Le salon textuel `admin-logs` n'existait pas, je viens de le créer pour vous :white_check_mark: , Veuillez réessayer :wink:",
 footer: {
-text: "Message par BananoBot."
+text: "Message par Bender | Bot."
 }
 }}).catch(console.error);
 }   
@@ -607,7 +607,7 @@ banMember.ban().then(member => {
           color: 0xff0000,
           description: `${member.user.username}`+` à bien été ban`,
           footer: {
-            text: "Message par Emiliabot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
 }).then(message.guild.channels.find('name','admin-logs').sendMessage({
@@ -654,7 +654,7 @@ banMember.ban().then(member => {
           color: 0xff0000,
           description: " :no_entry_sign: Le rôle **mute** n'existe pas dans ce serveur veuillez le créer pour Mute! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       } 
@@ -664,7 +664,7 @@ banMember.ban().then(member => {
           color: 0xff0000,
           description: " :no_entry_sign: Vous n'avez pas la permissions d'utiliser cette commande ! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par BenderBot."
           }
         }}).catch(console.error);
       } 
@@ -674,7 +674,7 @@ banMember.ban().then(member => {
           color: 0xff0000,
           description: " :no_entry_sign: Merci de spécifié l'utilisateur que vous voulez mute totalment. **Format ~> `!mute @mention`** ! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       }
@@ -685,7 +685,7 @@ banMember.ban().then(member => {
           color: 0xff0000,
           description: " :x:  L\'utilisateur que vous avez entré n'est pas valide ! :x:",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       }
@@ -701,7 +701,7 @@ title: "Erreur:",
 color: 0xff0000,
 description: " :no_entry_sign: Le salon textuel `admin-logs` n'existait pas, je viens de le créer pour vous :white_check_mark: , Veuillez réessayer :wink:",
 footer: {
-text: "Message par BananoBot."
+text: "Message par Bender | Bot."
 }
 }}).catch(console.error);
 }     
@@ -760,7 +760,7 @@ let mutedRole = message.guild.roles.find("name", "mute");
           color: 0xff0000,
           description: " :no_entry_sign: Le rôle **Mod** n'existe pas dans ce serveur veuillez le créer pour unmute! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       }
@@ -770,7 +770,7 @@ let mutedRole = message.guild.roles.find("name", "mute");
           color: 0xff0000,
           description: " :no_entry_sign: Le rôle **mute** n'existe pas dans ce serveur veuillez le créer pour Unmute! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       } 
@@ -801,7 +801,7 @@ let mutedRole = message.guild.roles.find("name", "mute");
           color: 0xff0000,
           description: " :x:  L\'utilisateur que vous avez entré n'est pas valide ! :x:",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       }
@@ -817,7 +817,7 @@ title: "Erreur:",
 color: 0xff0000,
 description: " :no_entry_sign: Le salon textuel `admin-logs` n'existait pas, je viens de le créer pour vous :white_check_mark: , Veuillez réessayer :wink:",
 footer: {
-text: "Message par BananoBot."
+text: "Message par Bender | Bot."
 }
 }}).catch(console.error);
 }   
@@ -830,7 +830,7 @@ let mutedRole = message.guild.roles.find("name", "mute");
           color: 0xff0000,
           description: " :white_check_mark:  Vous avez bien unmute ** " + muteMember + " dans le serveur " + message.guild.name + " ! :white_check_mark: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }
         }).then(message.guild.channels.find('name', 'admin-logs').sendMessage({
@@ -875,7 +875,7 @@ let mutedRole = message.guild.roles.find("name", "mute");
           color: 0xff0000,
           description: " :no_entry_sign: Le rôle **Mod** n'existe pas dans ce serveur veuillez le créer pour Clear! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       } 
@@ -885,7 +885,7 @@ let mutedRole = message.guild.roles.find("name", "mute");
           color: 0xff0000,
           description: " :no_entry_sign: Vous n'avez pas la permissions d'utiliser cette commande ! :no_entry_sign: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }}).catch(console.error);
       }
@@ -896,7 +896,7 @@ let mutedRole = message.guild.roles.find("name", "mute");
           color: 0xff0000,
           description: " :x: Vous n'avez pas précisser le nombre :x: ",
           footer: {
-            text: "Message par BananoBot."
+            text: "Message par Bender | Bot."
           }
         }});
       }
@@ -913,7 +913,7 @@ let mutedRole = message.guild.roles.find("name", "mute");
         color: 0x06DF00,
         description: "Messages Suprimé!",
         footer: {
-          text: "Message par BananoBot."
+          text: "Message par Bender | Bot."
         }
       }});
       }
@@ -994,95 +994,7 @@ const unirest = require("unirest");
   } else {
     con(`Parameters not provided for !google command`);
     message.channel.sendMessage(` ❓❓❓`);
-  }
-}else if (msgc.startsWith(prefix +'imdb')){
-const unirest = require("unirest");
 
-let  query = msgc.substr(6);
-  let type = "";
-  if(query.toLowerCase().indexOf("series ")==0 || query.toLowerCase().indexOf("episode ")==0 || query.toLowerCase().indexOf("movie ")==0) {
-    type = `&type=${query.substring(0, query.indexOf(" ")).toLowerCase()}`;
-    query = query.substring(query.indexOf(" ")+1);
-  }
-  if(query) {
-    unirest.get(`http://www.omdbapi.com/?t=${encodeURIComponent(query)}&r=json${type}`).header("Accept", "application/json").end(res => {
-      if(res.status==200 && res.body.Response=="True") {
-        message.channel.sendMessage({
-                  embed: {
-          type: 'rich',
-          description: '',
-          fields: [{
-            name: 'Results Imdb :film_frames:',
-            value:  `[${res.body.Title}${type ? "" : (` (${res.body.Type.charAt(0).toUpperCase()}${res.body.Type.slice(1)})`)}](http://www.imdb.com/title/${res.body.imdbID}/)`,
-            inline: false
-          },{
-            name: '** **',
-            value:  `\`\`\`${res.body.Plot}\`\`\``,
-            inline: false
-          },{
-            name: 'Year',
-            value:  `${res.body.Year}`,
-            inline: true
-          },{
-            name: 'Rated',
-            value:  `${res.body.Rated}`,
-            inline: true
-          },{
-            name: 'Runtime',
-            value:  `${res.body.Runtime}`,
-            inline: true
-          },{
-            name: 'Director',
-            value:  `${res.body.Director}`,
-            inline: true
-          },{
-            name: 'Writer',
-            value:  `${res.body.Writer}`,
-            inline: true
-          },{
-            name: 'Actors',
-            value:  `${res.body.Actors}`,
-            inline: true
-          },{
-            name: 'Genre(s)',
-            value:  `${res.body.Genre}`,
-            inline: false
-          },{
-            name: 'Rating',
-            value:  `${res.body.imdbRating} out of ${res.body.imdbVotes} votes`,
-            inline: true
-          },{
-            name: 'Awards',
-            value:  `${res.body.Awards}`,
-            inline: true
-          },{
-            name: 'Country',
-            value:  `${res.body.Country}`,
-            inline: true
-          }],
-          color: 3447003,
-          footer: {
-            text: 'by Banane27',
-            proxy_icon_url: ' '
-          },
-           author: {
-            name: message.author.username,
-            icon_url: message.author.avatarURL,
-            proxy_icon_url: ' '
-          }
-        }
-        })
-      } else {
-        con(`No IMDB entries found for ` + msgc.substr(6));
-        message.channel.sendMessage("Nothing found in IMDB 😶🚫");
-      }
-    });
-  } else {
-    message.channel.sendMessage(`U WOT M8... you need to use !imdb name film`);
-  }          
-
-
-  
                         
 }else if (msgc === (prefix +'dog')){
 const randomPuppy = require("random-puppy");
